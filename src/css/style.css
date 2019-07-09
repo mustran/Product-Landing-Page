@@ -1,2 +1,8 @@
 body {
   font: 100% Helvetica, sans-serif; }
+
+.video {
+  display: none; }
+
+.desc {
+  display: none; }

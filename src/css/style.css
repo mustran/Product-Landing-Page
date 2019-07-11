@@ -43,14 +43,15 @@
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 
-#products > * {
+.product {
   border: 5px solid #ce2828;
   border-radius: 10px;
   margin: 10px; }
 
 .product:hover {
   background-color: #9e1313;
-  color: white; }
+  color: white;
+  border-color: #830909; }
 
 #prod1,
 #prod2,
@@ -109,6 +110,7 @@
 .showVideo iframe {
   display: block;
   animation: transitionIn 1s;
+  height: 300px;
   width: 100%; }
 
 .showVideo #img1,

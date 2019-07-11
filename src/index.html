@@ -11,10 +11,16 @@
     </head>
     <body>
         <header id="header">
-            <nav id="df">
+            <div id="df">
                 <div id="header-img1">
                     <a href="">
-                        <img id="header-img" height="60" width="70" src="./assets/img/kingston-logo.png" alt="" />
+                        <img
+                            id="header-img"
+                            height="60"
+                            width="70"
+                            src="./assets/img/kingston-logo.png"
+                            alt=""
+                        />
                     </a>
                     <!-- <p style="background: blue">flex me</p> -->
                 </div>
@@ -22,7 +28,7 @@
                     <ul>
                         <li><a class="nav-link" href="#products">Products</a></li>
                         <li><a class="nav-link" href="#whyUs">Why us?</a></li>
-                        <li><a class="nav-link" href="#contact">Contact</a></li>
+                        <li><a class="nav-link" href="#whyUs">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,7 +39,7 @@
                 <p class="productTitle">Kingston SSDNow UV400 2.5" 240GB SATA</p>
                 <img id="img1" class="image" src="./assets/img/ssd.jpg" alt="" />
                 <iframe
-                id="video"
+                    id="video"
                     class="video"
                     src="https://www.youtube.com/embed/Uk9c1rBlBT0"
                     frameborder="0"
@@ -152,42 +158,59 @@
             </div>
         </div>
 
-        <div id="contact">
-            <p>Contact</p>
-            <div class="gmap_canvas">
-                <iframe
-                    width="685"
-                    height="327"
-                    id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=anhoch%20skopje&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0"
-                    scrolling="no"
-                    marginheight="0"
-                    marginwidth="0"
-                ></iframe>
-            </div>
-            <div id="contactUs">
+        <div id="contactSection">
+            <p id="contactTitle">Contact</p>
+            <div id="contact">
                 <div>
-                    <p>Wanna be notified?</p>
-                    <form id="form" action=" https://www.freecodecamp.com/email-submit">
-                        <label for="email">
-                            Email:
-                            <input
-                                id="email"
-                                name="email"
-                                type="email"
-                                required
-                                placeholder="Enter your email"
-                            />
-                        </label>
-                        <input type="submit" id="submit" value="SUBSCRIBE">
-                        <!-- <button type="submit">Submit</button> -->
-                    </form>
+                    <div class="gmap_canvas">
+                        <iframe
+                            id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=anhoch%20skopje&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0"
+                            scrolling="no"
+                            marginheight="0"
+                            marginwidth="0"
+                        ></iframe>
+                    </div>
+                </div>
+                <div id="contactUs">
+                    <div>
+                        <p id="notified">Get the latest products</p>
+                        <form id="form" action=" https://www.freecodecamp.com/email-submit">
+                            <label for="email">
+                                Email:
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    required
+                                    placeholder="Enter your email"
+                                />
+                            </label>
+                            <input type="submit" id="submit" value="SUBSCRIBE" />
+                            <!-- <button type="submit">Submit</button> -->
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
 
-
+        <footer id="footer">
+            <div id="links">
+                <a href="#">
+                    <p>Privacy</p>
+                </a>
+                <a href="#">
+                    <p>Terms</p>
+                </a>
+                <a href="#">
+                    <p>Contact</p>
+                </a>
+            </div>
+            <div>
+                <p id="copyright">Copyright &copy; 2019, Musli Ademi</p>
+            </div>
+        </footer>
 
         <script src="js/script.js"></script>
         <script src="js/jquery.min.js"></script>

@@ -29,7 +29,6 @@ body {
 
 #nav-bar {
     align-self: center;
-    
 }
 
 #nav-bar ul {
@@ -238,6 +237,123 @@ p {
 
 .aboutUs {
     color: rgba(0, 0, 0, 0.6);
+}
+
+#contactSection{
+    margin-top: 50px;
+}
+
+#contact {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+    // flex-wrap: wrap;
+    // justify-items: center;
+    // border: 1px solid black;
+    margin-right: 100px;
+    margin-left: 100px;
+    // transition: 1s ease-in;
+}
+#contactUs {
+    align-self: center;
+    justify-self: center;
+    padding: 40px;
+    border: 3px solid rgb(161, 37, 37);
+    border-radius: 10px;
+}
+
+.gmap_canvas{
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    background: lightgreen;
+}
+
+#notified{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#email{
+    border-radius: 5px;
+}
+
+#submit{
+    color: rgb(34, 27, 27);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    background-color: red;
+}
+
+#submit:hover, #submit:active{
+    color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    background-color: rgb(34, 27, 27);
+}
+
+#gmap_canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // border: 2px solid red;
+}
+
+#contactTitle{
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 560;
+    color: rgb(172, 26, 26);
+}
+
+#contact > * {
+    margin: 20px;
+    // border: 1px solid black;
+}
+
+#footer{
+    background: linear-gradient(100deg, rgb(224, 46, 22), rgb(0, 0, 0));
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    grid-auto-flow: row;
+    height: auto;
+    bottom: 0;
+    width: 100%;
+}
+
+#links{
+    display: flex;
+}
+
+#links > *{
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+#copyright{
+    padding: 0;
+    margin: 0;
+    color: grey;
+    text-align: center;
+}
+
+#links > a:hover{
+    text-decoration: none;
+    color: rgba(255,255,255, 0.7);
 }
 
 @media (max-width: 632px) {

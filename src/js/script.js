@@ -19,6 +19,24 @@ detailsButton3.addEventListener('click', function () {
     prod3.classList.toggle("showDescription");
 })
 
+let videoButton1 = document.querySelector("#videoButton1");
+videoButton1.addEventListener('click', function(){
+    console.log("CLICKED");
+    prod1.classList.toggle("showVideo");
+})
+
+let videoButton2 = document.querySelector("#videoButton2");
+videoButton2.addEventListener('click', function(){
+    console.log("CLICKED");
+    prod2.classList.toggle("showVideo");
+})
+
+let videoButton3 = document.querySelector("#videoButton3");
+videoButton3.addEventListener('click', function(){
+    console.log("CLICKED");
+    prod3.classList.toggle("showVideo");
+})
+
 // let showHide = document.querySelectorAll(".show");
 // console.log(showHide);
 

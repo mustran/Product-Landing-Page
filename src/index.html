@@ -7,30 +7,52 @@
         <title>Product Landing Page</title>
         <link rel="stylesheet" href="./css/bootstrap.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/font-awesome.css" />
     </head>
     <body>
         <header id="header">
-            <div id="header-img">
-                <img height="60" width="70" src="./assets/img/kingston-logo.png" alt="" />
-            </div>
-            <div id="nav-bar">
-                <ul>
-                    <div>
+            <div id="df">
+                <div id="header-img">
+                    <a href="#">
+                        <img height="60" width="70" src="./assets/img/kingston-logo.png" alt="" />
+                    </a>
+                    <!-- <p style="background: blue">flex me</p> -->
+                </div>
+                <div id="nav-bar">
+                    <ul>
                         <li><a class="nav-link" href="#products">Products</a></li>
-                    </div>
-                    <div>
-                        <li><a class="nav-link" href="#whyUs">WHy us?</a></li>
-                    </div>
-                    <div>
+                        <li><a class="nav-link" href="#whyUs">Why us?</a></li>
                         <li><a class="nav-link" href="#contact">Contact</a></li>
-                    </div>
-                </ul>
+                    </ul>
+                </div>
             </div>
         </header>
 
         <div id="products">
-            <div>
-                <img src="./assets/img/ssd.jpg" alt="" />
+            <div id="prod1">
+                <p class="productTitle">Product 1</p>
+                <img id="img1" class="image" src="./assets/img/ssd.jpg" alt="" />
+                <iframe
+                    class="video"
+                    width="380"
+                    height="250"
+                    src="https://www.youtube.com/embed/fRXDr94_SKA"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, recusandae ad?
+                    Minima nisi saepe, fugit laboriosam ipsam deserunt, molestias, iusto a illo
+                    accusantium libero ratione quasi voluptatibus quis et excepturi.
+                </p>
+                <a id="searchButton" href="#">
+                    <i  class="fa fa-search"></i>
+                </a>
+            </div>
+            <div id="prod2">
+                <p class="productTitle">Product 2</p>
+                <img class="image" src="./assets/img/ssd.jpg" alt="" />
                 <iframe
                     class="video"
                     width="380"
@@ -46,25 +68,9 @@
                     accusantium libero ratione quasi voluptatibus quis et excepturi.
                 </p>
             </div>
-            <div>
-                <img src="./assets/img/ssd.jpg" alt="" />
-                <iframe
-                    class="video"
-                    width="380"
-                    height="250"
-                    src="https://www.youtube.com/embed/fRXDr94_SKA"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-                <p class="desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, recusandae ad?
-                    Minima nisi saepe, fugit laboriosam ipsam deserunt, molestias, iusto a illo
-                    accusantium libero ratione quasi voluptatibus quis et excepturi.
-                </p>
-            </div>
-            <div>
-                <img src="./assets/img/ssd.jpg" alt="" />
+            <div id="prod3">
+                <p class="productTitle">Product 3</p>
+                <img class="image" src="./assets/img/ssd.jpg" alt="" />
                 <iframe
                     class="video"
                     width="380"
@@ -148,6 +154,7 @@
             </div>
         </div>
 
+        <script src="js/script.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/tether.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

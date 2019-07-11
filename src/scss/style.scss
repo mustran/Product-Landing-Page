@@ -169,3 +169,81 @@
         transform: translateY(0);
     }
 }
+
+#whyUs {
+    // background-color: black;
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+
+#whyUs > * {
+    display: flex;
+    // border: 2px solid black;
+    padding: 10px;
+    max-width: 800px;
+    justify-self: center;
+    // margin: 0 150px 0 150px;
+}
+
+#premiumMaterials {
+    display: flex;
+    flex-direction: column;
+}
+
+#quality > *,
+#fastShipping > *,
+#warranty > * {
+    display: grid;
+    // border: 1px solid red;
+    grid-template-columns: 150px 1fr;
+}
+
+.description {
+    display: grid;
+
+    // border: 1px solid black;
+}
+
+.description > * {
+    // border: 2px solid green;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.icons1 {
+    color: rgb(190, 23, 23);
+    align-self: center;
+    margin-right: 40px;
+}
+
+.qualityTitle {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+    align-self: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+        Geneva, Verdana, sans-serif;
+}
+
+.aboutUs {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 632px) {
+    #quality > *,
+    #fastShipping > *,
+    #warranty > * {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #iconF,
+    #iconT,
+    #iconB {
+        display: none;
+    }
+}

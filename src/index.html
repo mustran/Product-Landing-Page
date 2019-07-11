@@ -11,20 +11,20 @@
     </head>
     <body>
         <header id="header">
-            <div id="df">
-                <div id="header-img">
+            <nav id="df">
+                <div id="header-img1">
                     <a href="">
-                        <img height="60" width="70" src="./assets/img/kingston-logo.png" alt="" />
+                        <img id="header-img" height="60" width="70" src="./assets/img/kingston-logo.png" alt="" />
                     </a>
                     <!-- <p style="background: blue">flex me</p> -->
                 </div>
-                <div id="nav-bar">
+                <nav id="nav-bar">
                     <ul>
                         <li><a class="nav-link" href="#products">Products</a></li>
                         <li><a class="nav-link" href="#whyUs">Why us?</a></li>
                         <li><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </header>
 
@@ -33,6 +33,7 @@
                 <p class="productTitle">Kingston SSDNow UV400 2.5" 240GB SATA</p>
                 <img id="img1" class="image" src="./assets/img/ssd.jpg" alt="" />
                 <iframe
+                id="video"
                     class="video"
                     src="https://www.youtube.com/embed/Uk9c1rBlBT0"
                     frameborder="0"
@@ -168,25 +169,30 @@
             <div id="contactUs">
                 <div>
                     <p>Wanna be notified?</p>
-                    <form action="">
+                    <form id="form" action=" https://www.freecodecamp.com/email-submit">
                         <label for="email">
                             Email:
                             <input
                                 id="email"
+                                name="email"
                                 type="email"
                                 required
                                 placeholder="Enter your email"
                             />
                         </label>
-                        <button type="submit">Submit</button>
+                        <input type="submit" id="submit" value="SUBSCRIBE">
+                        <!-- <button type="submit">Submit</button> -->
                     </form>
                 </div>
             </div>
         </div>
 
+
+
         <script src="js/script.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/tether.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>

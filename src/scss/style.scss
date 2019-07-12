@@ -6,6 +6,7 @@ html {
 body {
     height: 100%;
     overflow: auto;
+    overscroll-behavior-y: none;
 }
 
 .video {
@@ -289,7 +290,9 @@ p {
     border: none;
     padding: 7px;
     background-color: red;
+    justify-content: center;
 }
+
 
 #submit:hover, #submit:active{
     color: red;
@@ -380,5 +383,13 @@ p {
 
     #products {
         margin-top: 120px;
+    }
+}
+
+
+@media (max-width: 680px){
+    #form{
+        display: flex;
+        flex-direction: column;
     }
 }

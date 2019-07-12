@@ -4,7 +4,8 @@ html {
 
 body {
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+  overscroll-behavior-y: none; }
 
 .video {
   display: none; }
@@ -230,7 +231,8 @@ p {
   border-radius: 5px;
   border: none;
   padding: 7px;
-  background-color: red; }
+  background-color: red;
+  justify-content: center; }
 
 #submit:hover, #submit:active {
   color: red;
@@ -304,3 +306,8 @@ p {
     margin-bottom: 10px; }
   #products {
     margin-top: 120px; } }
+
+@media (max-width: 680px) {
+  #form {
+    display: flex;
+    flex-direction: column; } }

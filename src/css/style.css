@@ -47,6 +47,8 @@ body {
 #products {
   display: grid;
   margin-top: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 
